@@ -1,0 +1,11 @@
+input PingPongInput {
+  color: String!,
+  click: Number!
+}
+
+mutation Ping($pingPong: PingPongInput) {
+  ping(pingPong: $pingPong) {
+    color
+    click
+  }
+}
