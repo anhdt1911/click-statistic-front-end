@@ -1,6 +1,6 @@
 import React from "react";
 import io from "socket.io-client";
-
+import "./Button.css";
 const socket = io("https://click-statistic-server.herokuapp.com/");
 
 const Client: React.FC = () => {
@@ -23,10 +23,10 @@ const Client: React.FC = () => {
   };
   return (
     <div>
-      <button className="bg-green-400 w-4" onClick={() => onClick("Green")}>
+      <button className="green" onClick={() => onClick("Green")}>
         Green
       </button>
-      <button className="bg-orange-400" onClick={() => onClick("Orange")}>
+      <button className="orange" onClick={() => onClick("Orange")}>
         Orange
       </button>
     </div>
