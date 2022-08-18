@@ -49,7 +49,11 @@ const Dashboard: React.FC = () => {
     ],
   };
 
-  return <Pie style={doughnutStyle} options={options} data={pieData} />;
+  return (
+    <div style={{ position: "relative", margin: "auto", width: "40vw" }}>
+      <Pie style={doughnutStyle} options={options} data={pieData} />
+    </div>
+  );
 };
 
 export default Dashboard;
