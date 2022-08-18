@@ -1,10 +1,8 @@
 import React from "react";
-import Client from '../components/client'
+import Client from "../components/client/client";
 
 const ClientPage: React.FC = () => {
-  return (
-    <Client />
-  );
+  return <Client />;
 };
 
 export default Client;

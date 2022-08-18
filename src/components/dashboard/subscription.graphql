@@ -1,6 +1,0 @@
-subscription Pong {
-  pong {
-    color
-    click
-  }
-}
